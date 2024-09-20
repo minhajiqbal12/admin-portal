@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .btn-admin {
+            background-color: #28a745;
+        }
+        .btn-admin:hover {
+            background-color: #218838;
+        }
+        .note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Options</h1>
+        <p>Select one of the following options to proceed:</p>
+
+        <!-- Admin Button -->
+        <button class="btn btn-admin" onclick="window.location.href='admin-login.html';">Admin Login</button>
+
+        <!-- Student Button -->
+        <button class="btn" onclick="window.location.href='student-login.html';">Student Login</button>
+
+        <p class="note">Admin and student logins are handled separately.</p>
+    </div>
+</body>
+</html>
